@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stackup MFG | Coming Soon</title>
+  <meta name="description" content="Stackup MFG: SMT manufacturing and PCB assembly. Our new website is coming soon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1215;
+      --fg: #eef1f4;
+      --muted: #9aa4ae;
+      --accent: #f2a541;
+      --line: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size: 48px 48px;
+      background-position: center;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 24px;
+      max-width: 880px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .mark {
+      display: flex;
+      gap: 6px;
+      flex-direction: column;
+      width: 44px;
+      margin-bottom: 40px;
+    }
+    .mark span { height: 8px; background: var(--accent); border-radius: 1px; }
+    .mark span:nth-child(1) { width: 60%; opacity: .55; }
+    .mark span:nth-child(2) { width: 80%; opacity: .8; }
+    .mark span:nth-child(3) { width: 100%; }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: "Space Grotesk", Inter, sans-serif;
+      font-weight: 700;
+      font-size: clamp(44px, 9vw, 96px);
+      line-height: .95;
+      letter-spacing: -0.02em;
+    }
+    p.lead {
+      margin-top: 24px;
+      font-size: clamp(17px, 2.2vw, 20px);
+      line-height: 1.55;
+      color: var(--muted);
+      max-width: 520px;
+    }
+    .contact {
+      margin-top: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 4px;
+      width: fit-content;
+    }
+    .contact:hover { color: var(--accent); }
+    footer {
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="eyebrow">Coming soon</div>
+    <h1>Stackup MFG</h1>
+    <p class="lead">SMT manufacturing and PCB assembly. Our full website is on the way. Check back soon.</p>
+    <a class="contact" href="mailto:info@stackupmfg.com">info@stackupmfg.com &rarr;</a>
+  </main>
+  <footer>&copy; <span id="y">2026</span> Stackup MFG</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
